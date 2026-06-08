@@ -82,7 +82,7 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 
 ---
 
-## 📉 The Statistics Behind the Story
+## The Statistics Behind the Story
 
 Here's a quick stats explainer for the key numbers — no jargon, just intuition:
 
@@ -101,78 +101,75 @@ Here's a quick stats explainer for the key numbers — no jargon, just intuition
 > Statistical signal: Tables alone show $2.23M in sales with –$305K profit. Every table sold *costs* the business money.
 
 ### 📌 Seasonal Pattern (October–December spike)
-> Q4 revenue: $6.18M vs Q1 revenue: $3.50M  
+> Profit analysis revenue: $6.18M vs Q1 revenue: $3.50M  
 > That's a **77% increase** — a statistically strong seasonal effect.  
 > In data terms, this is called **time-series seasonality.** It repeats predictably year over year, making it plannable.
 
 ---
 
-## 🤖 A Pinch of Machine Learning (Plain English)
+## A Pinch of Machine Learning (Plain English)
 
 Want to take this analysis to the next level? Here's what ML could add:
 
-### 🔮 Predict Which Orders Will Be Profitable
+###  Predict Which Orders Will Be Profitable
 > **Algorithm: Logistic Regression / Decision Tree**  
 > Train a model on: discount %, category, segment, order month → predict if an order will be profitable or loss-making *before it ships.*  
 > **Business value:** Sales reps get a real-time "profit risk score" when creating a deal.
 
-### 📦 Forecast Q4 Inventory Needs
+### Forecast Q4 Inventory Needs
 > **Algorithm: Time Series Forecasting (Prophet / Moving Average)**  
 > Use 4 years of monthly sales data to predict next October–December demand per sub-category.  
 > **Business value:** No stockouts on Copiers (your profit engine). No overstock on Tables (your loss-maker).
 
-### 🧩 Customer Clustering
-> **Algorithm: K-Means Clustering**  
-> Group customers by: purchase frequency, average order size, discount sensitivity → discover hidden customer personas beyond the 3 official segments.  
-> **Business value:** Hyper-targeted promotions instead of one-size-fits-all discounting.
+### Customer Clustering
+**Algorithm: K-Means Clustering**  
+Group customers by: purchase frequency, average order size, discount sensitivity → discover hidden customer personas beyond the 3 official segments.  
+**Business value:** Hyper-targeted promotions instead of one-size-fits-all discounting.
 
 ---
 
-## 🎯 6 Business Recommendations
+##  6 Business Recommendations
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  💡 Recommendation 1: Cap discounts at 15%                  │
-│  Impact: Recover up to $700K in annual profit               │
-│  Difficulty: Low (policy change)                            │
-├─────────────────────────────────────────────────────────────┤
-│  🚨 Recommendation 2: Furniture Pricing Review — URGENT     │
-│  Impact: Recover $498K annually                             │
-│  Difficulty: Medium (supplier negotiation / price hike)     │
-├─────────────────────────────────────────────────────────────┤
-│  🏆 Recommendation 3: Double down on Copiers                │
-│  Impact: Scale $1.19M profit engine further                 │
-│  Difficulty: Low (marketing & inventory investment)         │
-├─────────────────────────────────────────────────────────────┤
-│  📅 Recommendation 4: Q4 Demand Planning                    │
-│  Impact: Avoid stockouts during 77% revenue surge           │
-│  Difficulty: Medium (supply chain coordination)             │
-├─────────────────────────────────────────────────────────────┤
-│  🤝 Recommendation 5: Grow Corporate Segment                │
-│  Impact: Shift mix toward 24% more profitable customers     │
-│  Difficulty: Medium (B2B sales strategy)                    │
-├─────────────────────────────────────────────────────────────┤
-│  🗺️ Recommendation 6: Geo-focus on CA, NY, TX               │
-│  Impact: These 3 states = 37% of revenue                    │
-│  Difficulty: Low (regional marketing campaigns)             │
-└─────────────────────────────────────────────────────────────┘
+
+1: Cap discounts at 15%                  
+  Impact: Recover up to $700K in annual profit               
+  Difficulty: Low (policy change)                            
+---
+2: Furniture Pricing Review — URGENT     
+  Impact: Recover $498K annually                             
+  Difficulty: Medium (supplier negotiation / price hike)     
+---
+3: Double down on Copiers                
+  Impact: Scale $1.19M profit engine further                 
+  Difficulty: Low (marketing & inventory investment)         
+---
+4: profit analysis Demand Planning                    
+  Impact: Avoid stockouts during 77% revenue surge           
+  Difficulty: Medium (supply chain coordination)             
+---
+5: Grow Corporate Segment                
+  Impact: Shift mix toward 24% more profitable customers     
+  Difficulty: Medium (B2B sales strategy)                   
+---
+6: Geo-focus on CA, NY, TX               
+  Impact: These 3 states = 37% of revenue                    
+ Difficulty: Low (regional marketing campaigns)             
 ```
 
 ---
 
 ## 📁 Dataset
 
-| Field | Detail |
-|-------|--------|
-| **Source** | Sample Superstore (publicly available via Tableau / Kaggle) |
-| **Records** | 9,994 transactions |
-| **Time Period** | 2020 – 2023 |
-| **Geography** | United States |
-| **Features** | Order Date, Ship Date, Category, Sub-Category, Sales, Profit, Discount, Segment, Region, State |
+ **Source** : Sample Superstore (Kaggle) 
+ **Records** : 9,994 transactions 
+ **Time Period** :  2020 – 2023 
+ **Geography** : United States 
+ **Features** : Order Date, Ship Date, Category, Sub-Category, Sales, Profit, Discount, Segment, Region, State 
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 # 1. Clone the repository
@@ -191,19 +188,17 @@ jupyter notebook "_E_Commerce_project_1_ (2).ipynb"
 
 ---
 
-## 📊 Analysis Score Card
+##  Analysis 
 
-| Dimension | Score | Notes |
-|-----------|-------|-------|
-| Data Cleaning & Integrity | ⭐⭐⭐⭐⭐ | Zero missing values, duplicate check, proper dtype conversion |
-| Analytical Depth | ⭐⭐⭐⭐⭐ | 8+ analysis dimensions, multi-level groupby |
-| Visualisation Quality | ⭐⭐⭐⭐⭐ | Interactive Plotly charts, donut, line, bar, grouped bar |
-| Business Storytelling | ⭐⭐⭐⭐⭐ | Each chart is tied to a business question + actionable insight |
-| Code Quality | ⭐⭐⭐⭐☆ | Clean & readable; could add functions/classes for scale |
-| Statistical Reasoning | ⭐⭐⭐⭐☆ | Margins, ratios, comparisons — room to add hypothesis testing |
-| Recommendations | ⭐⭐⭐⭐⭐ | 6 specific, quantified, prioritised action items |
 
-**Overall: 9.1 / 10** — This is production-quality exploratory analysis.
+ Data Cleaning & Integrity : Zero missing values, duplicate check, proper dtype conversion 
+ Analytical Depth : 8+ analysis dimensions, multi-level groupby 
+ Visualisation Quality : Interactive Plotly charts, donut, line, bar, grouped bar 
+ Business Storytelling : Each chart is tied to a business question + actionable insight 
+ Code Quality : Clean & readable; could add functions/classes for scale 
+ Statistical Reasoning : Margins, ratios, comparisons — room to add hypothesis testing 
+ Recommendations : 6 specific, quantified, prioritised action items 
+
 
 ---
 
@@ -226,6 +221,5 @@ Aspiring Data Analyst | Python · Pandas · Plotly · SQL · EDA
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:764ba2,100:667eea&height=100&section=footer" width="100%"/>
 
-*⭐ If this project gave you an insight or sparked an idea, consider starring it!*
 
 </div>
