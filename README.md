@@ -20,7 +20,7 @@
 
 ---
 
-## 🎯 The Business Problem
+##  The Business Problem
 
 A US-based e-commerce company was generating **$19.3M in revenue** but walking away with only **$686K in profit** — a razor-thin **3.6% margin**. The question was: *where is the money going, and how do we get it back?*
 
@@ -28,47 +28,47 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 
 ---
 
-## 💥 Top 5 Findings (The Punchy Version)
+##  Top 5 Findings (The Punchy Version)
 
 | # | Finding | Impact |
 |---|---------|--------|
-| 🔴 | **Furniture loses $498K/year** despite $4.55M in sales | Biggest profit leak in the business |
-| 🟡 | **50.6% of orders carry ≥20% discounts** | Responsible for $700K in lost profit |
-| 🟢 | **Copiers alone generate $1.19M profit** | Single highest-margin product |
-| 🔵 | **Q4 generates 77% more revenue than Q1** | Massive seasonal opportunity untapped |
-| 🟣 | **Corporate customers are 24% more profitable** than Consumer per dollar of sales | Segment strategy is misaligned |
+|  **Furniture loses $498K/year** despite $4.55M in sales | Biggest profit leak in the business |
+|  **50.6% of orders carry ≥20% discounts** | Responsible for $700K in lost profit |
+|  **Copiers alone generate $1.19M profit** | Single highest-margin product |
+|  **Q4 generates 77% more revenue than Q1** | Massive seasonal opportunity untapped |
+|  **Corporate customers are 24% more profitable** than Consumer per dollar of sales | Segment strategy is misaligned |
 
 ---
 
-## 📊 Project Architecture
+## Project Architectu
 
 ```
 📁 E-Commerce Sales Intelligence
 │
-├── 🧹 Data Preprocessing
+├──  Data Preprocessing
 │   ├── Null value check (0 missing values found)
 │   ├── Duplicate detection
 │   ├── Date parsing & feature engineering
 │   └── Derived columns: Order Month, Year, Day of Week
 │
-├── 📈 Sales Analysis (4 dimensions)
+├──  Sales Analysis (4 dimensions)
 │   ├── Monthly Sales Trend
 │   ├── Sales by Category
 │   ├── Sales by Sub-Category
 │   └── Customer Segment Sales
 │
-├── 💰 Profit Analysis (4 dimensions)
+├──  Profit Analysis (4 dimensions)
 │   ├── Monthly Profit Trend
 │   ├── Profit by Category
 │   ├── Profit by Sub-Category
 │   └── Sales-to-Profit Ratio by Segment
 │
-└── 🎯 Business Recommendations (6 action items)
+└──  Business Recommendations (6 action items)
 ```
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Version | Purpose |
 |------|---------|---------|
@@ -78,7 +78,7 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 | **Plotly Graph Objects** | 5.x | Multi-trace grouped bar charts |
 | **Jupyter Notebook** | Latest | Development & storytelling environment |
 
-> 💡 **Why Plotly over Matplotlib?** Plotly charts are interactive — you can hover, zoom, and filter directly in the notebook. This makes exploratory analysis faster and presentations more compelling.
+>  **Why Plotly over Matplotlib?** Plotly charts are interactive — you can hover, zoom, and filter directly in the notebook. This makes exploratory analysis faster and presentations more compelling.
 
 ---
 
