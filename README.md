@@ -30,8 +30,8 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 
 ##  Top 5 Findings (The Punchy Version)
 
-| # | Finding | Impact |
-|---|---------|--------|
+|  Finding | Impact |
+|---------|--------|
 |  **Furniture loses $498K/year** despite $4.55M in sales | Biggest profit leak in the business |
 |  **50.6% of orders carry ≥20% discounts** | Responsible for $700K in lost profit |
 |  **Copiers alone generate $1.19M profit** | Single highest-margin product |
@@ -40,7 +40,7 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 
 ---
 
-## Project Architectu
+## Project Architecture
 
 ```
 📁 E-Commerce Sales Intelligence
