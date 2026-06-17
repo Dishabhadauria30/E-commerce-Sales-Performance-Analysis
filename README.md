@@ -35,7 +35,7 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 |  **Furniture loses $498K/year** despite $4.55M in sales | Biggest profit leak in the business |
 |  **50.6% of orders carry ≥20% discounts** | Responsible for $700K in lost profit |
 |  **Copiers alone generate $1.19M profit** | Single highest-margin product |
-|  **Q4 generates 77% more revenue than Q1** | Massive seasonal opportunity untapped |
+|  **monthly profit analysis generates 77% more revenue than monthly sales analysis** | Massive seasonal opportunity untapped |
 |  **Corporate customers are 24% more profitable** than Consumer per dollar of sales | Segment strategy is misaligned |
 
 ---
@@ -78,17 +78,17 @@ This analysis digs into **9,994 transactions across 2020–2023** to answer exac
 | **Plotly Graph Objects** | 5.x | Multi-trace grouped bar charts |
 | **Jupyter Notebook** | Latest | Development & storytelling environment |
 
->  **Why Plotly over Matplotlib?** Plotly charts are interactive — you can hover, zoom, and filter directly in the notebook. This makes exploratory analysis faster and presentations more compelling.
+>  **Why Plotly over Matplotlib?** Plotly charts are interactive you can hover, zoom, and filter directly in the notebook. This makes exploratory analysis faster and presentations more compelling.
 
 ---
 
 ## The Statistics Behind the Story
 
-Here's a quick stats explainer for the key numbers — no jargon, just intuition:
+Here's a quick stats explainer for the key numbers no jargon, just intuition:
 
 ### 📌 What is a "Profit Margin"?
-> If you sell a chair for $100 and it costs you $95 to source, ship, and discount — you keep $5. That's a 5% margin.  
-> This business's overall margin is **3.6%** — meaning for every $100 earned, only $3.60 is kept. That's dangerously thin.
+> If you sell a chair for $100 and it costs you $95 to source, ship, and discount you keep $5. That's a 5% margin.  
+> This business's overall margin is **3.6%** meaning for every $100 earned, only $3.60 is kept. That's dangerously thin.
 
 ### 📌 What does "Sales-to-Profit Ratio" mean?
 > Corporate customers need **$25.5 in sales** to generate $1 in profit.  
@@ -96,27 +96,27 @@ Here's a quick stats explainer for the key numbers — no jargon, just intuition
 > **Lower = better.** The 24% gap is statistically meaningful and drives the "focus on Corporate" recommendation.
 
 ### 📌 Why does Furniture look successful but isn't?
-> Furniture has $4.55M in sales (looks great!) but –$498K in profit (disaster).  
-> This disconnect — high revenue, negative profit — is a classic case of **margin erosion through discounting.**  
-> Statistical signal: Tables alone show $2.23M in sales with –$305K profit. Every table sold *costs* the business money.
+> Furniture has $4.55M in sales (looks great!) but $498K in profit (disaster).  
+> This disconnect  high revenue, negative profit  is a classic case of **margin erosion through discounting.**  
+> Statistical signal: Tables alone show $2.23M in sales with $305K profit. Every table sold *costs* the business money.
 
 ### 📌 Seasonal Pattern (October–December spike)
-> Profit analysis revenue: $6.18M vs Q1 revenue: $3.50M  
-> That's a **77% increase** — a statistically strong seasonal effect.  
-> In data terms, this is called **time-series seasonality.** It repeats predictably year over year, making it plannable.
+> Profit analysis revenue: $6.18M vs monthly sales analysis revenue: $3.50M  
+> That's a **77% increase** a statistically strong seasonal effect.  
+> In data terms, this is called **time-series seasonality** It repeats predictably year over year, making it plannable.
 
 ---
 
 ## A Pinch of Machine Learning (Plain English)
 
-Want to take this analysis to the next level? Here's what ML could add:
+Here's what ML could add:
 
 ###  Predict Which Orders Will Be Profitable
 > **Algorithm: Logistic Regression / Decision Tree**  
 > Train a model on: discount %, category, segment, order month → predict if an order will be profitable or loss-making *before it ships.*  
 > **Business value:** Sales reps get a real-time "profit risk score" when creating a deal.
 
-### Forecast Q4 Inventory Needs
+### Forecast monthly profit analysis Inventory Needs
 > **Algorithm: Time Series Forecasting (Prophet / Moving Average)**  
 > Use 4 years of monthly sales data to predict next October–December demand per sub-category.  
 > **Business value:** No stockouts on Copiers (your profit engine). No overstock on Tables (your loss-maker).
@@ -136,7 +136,7 @@ Group customers by: purchase frequency, average order size, discount sensitivity
   Impact: Recover up to $700K in annual profit               
   Difficulty: Low (policy change)                            
 ---
-2: Furniture Pricing Review — URGENT     
+2: Furniture Pricing Review important     
   Impact: Recover $498K annually                             
   Difficulty: Medium (supplier negotiation / price hike)     
 ---
