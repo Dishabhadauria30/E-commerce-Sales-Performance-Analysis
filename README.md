@@ -14,7 +14,7 @@
 <br/>
 
 > **"Data without insight is just noise. Insight without action is just trivia."**  
-> This project delivers both — and quantifies a $1.2M profit recovery opportunity.
+> This project delivers both and quantifies a $1.2M profit recovery opportunity.
 
 </div>
 
@@ -22,7 +22,7 @@
 
 ##  The Business Problem
 
-A US-based e-commerce company was generating **$19.3M in revenue** but walking away with only **$686K in profit** — a razor-thin **3.6% margin**. The question was: *where is the money going, and how do we get it back?*
+A US-based e-commerce company was generating **$19.3M in revenue** but walking away with only **$686K in profit** a razor thin **3.6% margin**. The question was: *where is the money going, and how do we get it back?*
 
 This analysis digs into **9,994 transactions across 2020–2023** to answer exactly that.
 
